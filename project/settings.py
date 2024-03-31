@@ -123,3 +123,13 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-mail.outlook.com'  # Cambia esto por tu servidor SMTP
+EMAIL_PORT = 587  # Puerto del servidor SMTP
+EMAIL_USE_TLS = True  # Usar TLS para seguridad
+EMAIL_HOST_USER = 'sgsartur@hotmail.com'  # Tu dirección de correo electrónico
+EMAIL_HOST_PASSWORD = 'artur1605'  # Tu contraseña de correo electrónico
+
