@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -17,13 +19,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link href="/recipes/templates/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'recipes/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <link href="/recipes/templates/template/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="{% static 'recipes/css/bootstrap-icons.css'%}" rel="stylesheet">
 
-    <link href="/recipes/templates/template/css/magnific-popup.css" rel="stylesheet">
+    <link href="{% static 'recipes/css/magnific-popup.css'%}" rel="stylesheet">
 
-    <link rel="stylesheet" href="/recipes/templates/template/css/templatemo-first-portfolio-style.css">
+    <link rel="stylesheet" href="{% static 'recipes/css/template.css' %}">
 
     <!--
 
@@ -102,7 +104,7 @@ https://templatemo.com/tm-578-first-portfolio
                     <div class="col-lg-7 col-12">
                         <div class="hero-text">
                             <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                <img src="images/Me.jpg" class="avatar-image avatar-image-large img-fluid" alt="">
+                                <img src="{% static 'recipes/images/Me.jpg' %}" class="avatar-image avatar-image-large img-fluid" alt="">
 
                                 <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
                             </div>
@@ -114,7 +116,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                     <div class="col-lg-5 col-12 position-relative">
                         <div class="hero-image-wrap"></div>
-                        <img src="images/portrait-happy-excited-man-holding-laptop-computer.png"
+                        <img src="{% static 'recipes/images/portrait-happy-excited-man-holding-laptop-computer.png' %}"
                             class="hero-image img-fluid" alt="">
                     </div>
 
@@ -134,7 +136,7 @@ https://templatemo.com/tm-578-first-portfolio
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <img src="images/couple-working-from-home-together-sofa.jpg" class="about-image img-fluid"
+                        <img src="{% static 'recipes/images/couple-working-from-home-together-sofa.jpg' %} " class="about-image img-fluid"
                             alt="">
                     </div>
 
@@ -144,7 +146,7 @@ https://templatemo.com/tm-578-first-portfolio
                             <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
                                 <h2 class="text-white me-4 mb-0">My Story</h2>
 
-                                <img src="images/Me.jpg" class="avatar-image img-fluid" alt="">
+                                <img src="{% static 'recipes/images/Me.jpg' %}" class="avatar-image img-fluid" alt="">
                             </div>
 
                             <h3 class="pt-2 mb-3">a little bit about Artur</h3>
@@ -234,7 +236,7 @@ https://templatemo.com/tm-578-first-portfolio
         </section>
 
 
-        <section class="clients section-padding">
+        {% comment %} <section class="clients section-padding">
             <div class="container">
                 <div class="row align-items-center">
 
@@ -243,28 +245,28 @@ https://templatemo.com/tm-578-first-portfolio
                     </div>
 
                     <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                        <img src="images/clients/cachet.svg" class="clients-image img-fluid" alt="">
+                        <img src="{% static 'recipes/images/clients/cachet.svg' %}" class="clients-image img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="images/clients/guitar-center.svg" class="clients-image img-fluid" alt="">
+                        <img src="{% static 'recipes/images/clients/guitar-center.svg' %}" class="clients-image img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="images/clients/tokico.svg" class="clients-image img-fluid" alt="">
+                        <img src="{% static 'recipes/images/clients/tokico.svg' %}" class="clients-image img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="images/clients/shopify.svg" class="clients-image img-fluid" alt="">
+                        <img src="{% static 'recipes/images/clients/shopify.svg' %}" class="clients-image img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-4 me-auto clients-item-height">
-                        <img src="images/clients/profil-rejser.svg" class="clients-image img-fluid" alt="">
+                        <img src="{% static 'recipes/images/clients/profil-rejser.svg' %}" class="clients-image img-fluid" alt="">
                     </div>
 
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
 
 
         <section class="services section-padding" id="section_3">
@@ -273,7 +275,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                     <div class="col-lg-10 col-12 mx-auto">
                         <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                            <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg"
+                            <img src="{% static  'images/handshake-man-woman-after-signing-business-contract-closeup.jpg' %}"
                                 class="avatar-image img-fluid" alt="">
 
                             <h2 class="text-white ms-4 mb-0">Services</h2>
@@ -291,7 +293,7 @@ https://templatemo.com/tm-578-first-portfolio
                                         </div>
                                     </div>
 
-                                    <p>You may want to explore Too CSS for great collection of free HTML CSS templates.
+                                    <p>You may want a customized website, just contact me below.
                                     </p>
 
                                     <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
@@ -313,8 +315,7 @@ https://templatemo.com/tm-578-first-portfolio
                                         </div>
                                     </div>
 
-                                    <p>You can explore more CSS templates on TemplateMo website by browsing through
-                                        different tags.</p>
+                                    <p>Your experience with a new and customized product made specifically for you will be amazing!</p>
 
                                     <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
 
@@ -357,8 +358,7 @@ https://templatemo.com/tm-578-first-portfolio
                                         </div>
                                     </div>
 
-                                    <p>To list your website first on any search engine, we will work together. First
-                                        Portfolio is one-page CSS Template for free download.</p>
+                                    <p>To list your website first on any search engine, we will work together.</p>
 
                                     <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
 
@@ -444,7 +444,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                     <div class="col-lg-6 col-md-8 col-12">
                         <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                            <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg"
+                            <img src="{% static 'recipes/images/aerial-view-man-using-computer-laptop-wooden-table.jpg' %}"
                                 class="avatar-image img-fluid" alt="">
 
                             <h2 class="text-white ms-4 mb-0">Say Hi</h2>
@@ -628,13 +628,13 @@ https://templatemo.com/tm-578-first-portfolio
     </footer>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{% static 'recipes/js/jquery.min.js' %}"></script>
+    <script src="{% static 'recipes/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'recipes/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'recipes/js/click-scroll.js' %}"></script>
+    <script src="{% static 'recipes/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'recipes/js/magnific-popup-options.js' %}"></script>
+    <script src="{% static 'recipes/js/custom.js' %}"></script>
 
 </body>
 

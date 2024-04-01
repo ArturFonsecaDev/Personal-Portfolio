@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 
 # Create your views here.
 
-def home_page(req): return render(req, 'template/index.html' )
+def home_page(req): return render(req, 'recipes/index.html' )
 
 def processing_forms(req):
     if req.method == 'POST':
